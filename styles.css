@@ -1,0 +1,106 @@
+:root{
+    --color1:  rgb(10, 56, 155);
+    --color2: rgb(251, 243, 6);
+}
+@font-face {
+    font-family: "font1";
+    src: url("fonts\bavicka.otf");
+}
+
+body{
+    
+    color: white;
+    font-size: 22px;
+    background-color: var(--color1);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.navbar{
+    color: red;
+    line-height: 1.4;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: var(--color1);
+    border-bottom: 3px solid black;
+    
+    
+}
+
+
+.jumbotron{
+    background-color: rgba(10, 10, 10, 0.3);
+    color:gold;
+    padding: 50px;
+    font-family: "font1";
+}
+.jumbotron p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 14px;
+    font-family: "font1";
+}
+h1,h2{
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.row{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+dialog{
+    background-color: rgba(10, 10, 10, 0.8);
+    color: white;
+    border: 0px;
+}
+#close_dialog{
+    position: sticky;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    color: rgb(230, 7, 7);
+    z-index: 9999;
+    
+}
+.img-thumbnail{
+    width: 100%;
+    height:100%;
+}
+footer{
+    color:gold;
+    font-size: 12px;
+}
+#close-bsa-dialog{
+    background: transparent;
+    position: absolute;
+    right: 2px;
+    border:none;
+}
+#bsa_answer{
+    background-color: rgb(231, 11, 11);
+    color: rgb(8, 8, 8);
+    border-radius: 5px;
+    padding: 5px;
+    width: 30vw;
+}
+hr{
+    width: 70vw;
+}
+.navbar{
+    color: blue;
+    line-height: 1.4;
+    font-size: 12px;
+    color: blue;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.glyphicon-home{
+    color: var(--color2);
+}
+.references-a{
+   color: white;
+  }
+.references-a:hover{
+color: white;
+}

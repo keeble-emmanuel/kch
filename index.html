@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTf-8"/>
+        <link rel="icon" type="image/svg+xml" href="pexels-suzyhazelwood-2533266.jpg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PHARMACIST COMPANION</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Codystar:wght@300;400&family=Rye&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Rye&display=swap" rel="stylesheet"/>
+        <script>
+            $(document).ready(function(){
+              
+              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+            
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 900, function(){
+                  window.location.hash = hash;
+                  });
+                } 
+              });
+            })
+            </script>
+            <style>
+              .navbar {
+                margin-bottom: 0;
+                z-index: 9999;
+                border: 0;
+                font-size: 17px !important;
+                line-height: 1.42857143 !important;
+                letter-spacing: 4px;
+                border-bottom: 2px solid rgb(251, 243, 6);
+                
+              }
+              
+              .navbar li a, .navbar .navbar-brand {
+                color: #fff !important;
+              }
+              .navbar li a{
+                border-radius:20px;
+              }
+              
+              .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: rgb(10, 56, 155) !important;
+                background-color: #fff !important;
+              }
+              
+              .navbar-default .navbar-toggle {
+                border-color: transparent;
+                color: #fff !important;
+              }
+            </style>
+        
+        
+    </head> 
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNav">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="references.html">references</a></li>
+              <li><a href="">calculations</a></li>
+              <li><a href="">gallery</a></li>
+            </u>
+          </div>
+        </div>
+      </nav>
+        <div class="jumbotron text-center bg-grey">
+            <h1>LILONGWE PHARMACIST COMPANION</h1>
+            <div id="tags"></div>
+            <p><u>pharmacy is my calling</u></p>
+
+        </div>
+        <div class="container">
+            <h2 text-center>WELCOME!!!</h2>
+            <p>This website was created in order to help pharmacy interns especially at KAMUZU CENTRAL HOSPITAL
+                to be of maximum service.
+            </p>
+            <p>It contains mostly academic materials that are very handy to a pharmacist during their practising.
+                
+            </p>
+        </div>
+        <div class="container">
+            <h2 class="text-center"><u>REFERENCE MATERIALS</u></h2>
+            
+            <button id="guidelines"class="btn btn-warning">guidelines</button>
+            <button id="law"class="btn btn-warning">law</button>
+
+        </div>
+        
+        <div class="container">
+            <h2 class="text-center"><u>CALCULATIONS</u></h2>
+            <button class="btn btn-warning" id="bsa">BSA</button>
+            <button class="btn btn-warning" id="bmi">BMI</button>
+            
+            <dialog id="bsa-dialog">
+              <button id="close-bsa-dialog"><span class="glyphicon glyphicon-remove"></span></button>
+              <h2 class="text-center">BSA</h2>
+              <div>
+                <label>height(cm)</label><input id="height"type="number" class="form-control"/>
+                <label>weight(kg)</label><input id="weight"type="number"  class="form-control"/>
+                <button id="bsa-calculate" class="btn btn-primary">calculate</button>
+                <p>the BSA is:</p><div id="bsa_answer">0</div>
+              </div>
+            </dialog>
+        </div>
+        <div class="container-fluid text-center">
+          <dialog id="handouts">
+            <button id="close_dialog" >
+              <span class="glyphicon glyphicon-remove"></span></button>
+            <h2 class="text-center"><u>REFERENCE</u></h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://drive.google.com/file/d/1DDShIicYo6C03-1zvHprDTkCoOH7oGNl/view?usp=drive_link" target="_blank">
+                  <img src="src\syndromic2.png" class="img-thumbnail"/>
+                </a>
+                <p>malawi guidelines for syndromic</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://drive.google.com/file/d/1SY9oUqEvwLrhJeUUPT8vTz1IDDOQrJwK/view?usp=drive_link" target="_blank">
+                  <img src="src\obs and gynae.png" class="img-thumbnail"/>
+                </a>
+                <p>obs and gynae</p>
+
+              </div>
+              <div class="col-sm-4">
+                <a href="https://drive.google.com/file/d/1SrJs8it2MtUMraYxn1Wzo4D8FN-SY-H5/view?usp=drive_link" target="_blank">
+                  <img src="src\malaria.png" class="img-thumbnail"/>
+                </a>
+                <p>malaria</p>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://drive.google.com/file/d/17XHnUsDrTil8FFbc9aX-oQcE_isNz59r/view?usp=drive_link" target="_blank">
+                  <img src="src\mstg.png" class="img-thumbnail"/>
+                </a>
+                <p>mstg</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://drive.google.com/file/d/1kbhiFjiUYWgKSZaMsax50dMwwik06mgj/view?usp=drive_link" target="_blank">
+                  <img src="src\hiv treatment.png" class="img-thumbnail"/>
+                </a>
+                <p>malawi hiv</p>
+
+              </div>
+              <div class="col-sm-4">
+                
+
+              </div>
+            </div>
+            
+           
+          </dialog>
+        </div>
+
+        
+
+
+        <div class="container-fluid text-center">
+          <h2><u>GALLERY</u></h2>
+          <button class="btn btn-warning">more</button>
+          <dialog></dialog>
+        </div>
+
+        <footer class="text-center">
+          <hr/>
+            <p>Designed by Emmanuel keeble kunsanama(BEYSAT <sup> &copy; </sup>)</p>
+            <p>pharmacist internee</p>
+
+            
+        </footer>
+        
+        <script src="script.js"></script>
+        
+    </body>
+    </html>
