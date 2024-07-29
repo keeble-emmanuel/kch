@@ -1,5 +1,5 @@
 :root{
-    --color1:  rgb(10, 56, 155);
+    --color1:  rgb(223, 99, 5);
     --color2: rgb(251, 243, 6);
 }
 @font-face {
@@ -104,3 +104,21 @@ hr{
 .references-a:hover{
 color: white;
 }
+.img-thumbnail{
+    height: 100%;
+    
+    margin: 0 auto;
+    
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
