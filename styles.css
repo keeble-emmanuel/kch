@@ -121,4 +121,12 @@ color: white;
     margin: 0 auto;
     padding: 20px 10px;
 }
-
+#drug{
+    color: black;
+    margin: 0 auto;
+    
+}
+ button a{
+    text-decoration: none;
+    color: white;
+ }
